@@ -1,0 +1,12 @@
+.input-content {
+  justify-content: center;
+  display: flex;
+  
+}
+
+
+.input {
+  width: 50%;
+  height: 30px;
+  border: 2px solid black;
+}

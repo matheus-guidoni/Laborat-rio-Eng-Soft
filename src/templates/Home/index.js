@@ -1,11 +1,11 @@
 import './styles.css';
+
 import { Component } from 'react';
 
-
-import { PostCard } from '../../components/PostCard';
 import { loadPosts } from '../../utils/loadPosts'
 import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
+import { Posts } from '../../components/Posts';
 
 export class Home extends Component {
 
@@ -64,38 +64,30 @@ export class Home extends Component {
           .includes(searchTarget.toString())
       }) : posts;
     return (
-      <section className="container">
-        {!!searchTarget && (
-          <>
-            <h1> Search value: {searchTarget}</h1><br /><br />
-          </>
-        )}
+      <div className="title">
+        <section className="container">
+          {!!searchTarget && (
+            <>
+              <h1> Search value: {searchTarget}</h1><br /><br />
+            </>
+          )}
 
-        <TextInput
-          value={searchTarget}
-          onChange={this.handleSearch}
-        />
-        <br />
-        <br />
-        <br />
-        <div className="posts">
-          {filteredPosts.map((post) => (
-            <PostCard
-              title={post.title}
-              body={post.body}
-              id={post.id}
-              cover={post.cover}
-            />
-          ))}
-        </div>
-        {!searchTarget && (
-          <Button
-            text="Load More Posts"
-            disabled={noMorePosts}
-            onClick={this.loadMorePosts}
+          <TextInput
+            value={searchTarget}
+            onChange={this.handleSearch}
           />
-        )}
-      </section >
+          <Posts
+            filteredPosts={filteredPosts}
+          />
+          {!searchTarget && (
+            <Button
+              text="Load More Posts"
+              disabled={noMorePosts}
+              onClick={this.loadMorePosts}
+            />
+          )}
+        </section >
+      </div>
     )
   }
 }

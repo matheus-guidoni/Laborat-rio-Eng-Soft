@@ -4,22 +4,15 @@
   background: #eee;
   padding: 30px;
   margin: 0 auto;
+  margin-top: 50px
+  
 }
 
-.post {
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 100ms ease-in-out;
+.title {
+  margin-top: 0;
+  padding: 50px ;
+  width: 100%;
+  height: 30px;
+  background: blue;
 }
 
-.post:hover{
-  transform: scale(1.05);
-}
-
-.post-content {
-  padding: 30px;
-}
-
-.post img {
-  max-width: 100%;
-}

@@ -1,9 +1,9 @@
 .input-content {
   justify-content: center;
   display: flex;
+  padding: 0 0 40px 0;
   
 }
-
 
 .input {
   width: 50%;

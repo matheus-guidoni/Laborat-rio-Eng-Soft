@@ -6,6 +6,7 @@ import { loadPosts } from '../../utils/loadPosts'
 import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
 import { Posts } from '../../components/Posts';
+import { CabecalhoRequests } from '../../components/CabecalhoRequests';
 
 export class Home extends Component {
 
@@ -56,6 +57,7 @@ export class Home extends Component {
 
 
   render() {
+
     const { posts, allPosts, searchTarget } = this.state;
     const noMorePosts = posts.length >= allPosts.length ? true : false;
     const filteredPosts = !!searchTarget ?
@@ -65,6 +67,8 @@ export class Home extends Component {
       }) : posts;
     return (
       <div className="title">
+        <CabecalhoRequests />
+        <div style={{ height: '100px' }}></div>
         <section className="container">
           {!!searchTarget && (
             <>

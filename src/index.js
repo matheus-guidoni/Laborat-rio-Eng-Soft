@@ -2,12 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/global-styles.css';
 import { Home } from './templates/Home';
-
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { ABC } from './templates/ABC'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/Home" component={Home} />
+        <Route exact path="/abc" component={ABC} />
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

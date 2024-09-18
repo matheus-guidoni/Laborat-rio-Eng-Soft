@@ -1,5 +1,6 @@
 import './styles.css';
 
+
 import { Component } from 'react';
 
 import { loadPosts } from '../../utils/loadPosts'
@@ -57,7 +58,6 @@ export class Home extends Component {
 
 
   render() {
-
     const { posts, allPosts, searchTarget } = this.state;
     const noMorePosts = posts.length >= allPosts.length ? true : false;
     const filteredPosts = !!searchTarget ?

@@ -23,7 +23,7 @@ export const ABC = () => {
         <div className="main-content intro-content">
           <div className="intro-text-content">
             <h2>Hello</h2>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae magnam provident eius cum excepturi iure fugit quibusdam quidem ducimus at impedit, eum vel exercitationem delectus reprehenderit assumenda in placeat eos?</p>
+            <span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae magnam provident eius cum excepturi iure fugit quibusdam quidem ducimus at impedit, eum vel exercitationem delectus reprehenderit assumenda in placeat eos?</span>
           </div>
           <div className="buttons-class">
             <Button

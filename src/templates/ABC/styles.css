@@ -8,7 +8,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
 }
-button{
+.buttons-class button{
   margin-top: 500px;
 }
 
@@ -62,12 +62,12 @@ button{
   height: 107px;
 }
 
-h2 {
+.intro-text-content h2 {
   color: white;
   font-family: 'Montserrat', sans-serif;
 }
 
-p {
+.intro-text-content span {
   color: white;
   line-height: 1.5;
 }

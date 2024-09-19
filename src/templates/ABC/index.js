@@ -12,6 +12,7 @@ export const ABC = () => {
   const history = useHistory();
 
   const handleAlocateLink = () => {
+    console.log("Aqui ja era");
     history.push("/Home");
   }
 

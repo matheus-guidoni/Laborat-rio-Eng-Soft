@@ -12,12 +12,13 @@ export const ABC = () => {
   const history = useHistory();
 
   const handleAlocateLink = () => {
-    console.log("Aqui ja era");
-    history.push("/Home");
+    console.log("Hello");
+    history.push("/home");
   }
 
   return (
-    <body className="main-bg">
+    <>
+      {/* <body className="main-bg"> */}
       <CabecalhoMenu />
       <div className="menu-spacing"></div>
       <section className="intro section main-bg">
@@ -32,10 +33,9 @@ export const ABC = () => {
           </div>
         </div>
       </section>
-
       <section className="section white-bg">
-
       </section>
-    </body >
+      {/* </body> */}
+    </>
   )
 }

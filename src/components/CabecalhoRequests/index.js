@@ -1,4 +1,5 @@
 import './styles.css'
+import { Avatar } from '@mui/material';
 
 export const CabecalhoRequests = () => {
   return (
@@ -10,6 +11,7 @@ export const CabecalhoRequests = () => {
         <nav>
           <ul>
             <li> <a href='#'>Conta</a></li>
+            <li class="Avatar"><Avatar /></li>
             <li> <a href='#'>Perfil</a></li>
           </ul>
         </nav>

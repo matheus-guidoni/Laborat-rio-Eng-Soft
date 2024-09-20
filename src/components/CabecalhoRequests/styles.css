@@ -21,6 +21,13 @@ a {
   background: white;
 }
 
+.menu .Avatar {
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 
 .menu-content {
   display: flex;
